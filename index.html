@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>KB스타뱅킹</title><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="KB스타뱅킹"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{--kb-yellow:#ffbc00;--kb-yellow-light:#fff8db;--kb-brown:#54483e;--kb-dark:#26282c;--kb-gray-bg:#f5f6f8;--kb-card-bg:#ffffff;--kb-sub-text:#8a9299;--kb-line:#ebeef1;--kb-blue:#1976d2}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;user-select:none;-webkit-user-select:none}body{background:#000;display:flex;justify-content:center;min-height:100vh}.app-viewport{width:100%;max-width:430px;min-height:100vh;background:var(--kb-gray-bg);position:relative;display:flex;flex-direction:column;overflow-x:hidden;padding-top:env(safe-area-inset-top);box-shadow:0 0 25px rgba(0,0,0,.5)}.screen{display:none;flex-direction:column;flex:1;padding-bottom:calc(75px + env(safe-area-inset-bottom))}.screen.active{display:flex;animation:fadeIn .2s ease-in-out}@keyframes fadeIn{from{opacity:.85;transform:scale(.995)}to{opacity:1;transform:scale(1)}}.nav-header{padding:14px 20px 10px;display:flex;align-items:center;justify-content:space-between;background:var(--kb-card-bg);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(0,0,0,.03)}.nav-title{font-size:18px;font-weight:800;color:var(--kb-dark);display:flex;align-items:center;gap:6px}.header-icons{display:flex;gap:16px;align-items:center}.icon-btn{background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#3d4248;padding:2px}.icon-btn svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}.kb-top-user-row{padding:14px 20px 8px;display:flex;justify-content:space-between;align-items:center;background:#fff}.kb-user-grade{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:800;color:var(--kb-dark);cursor:pointer}.kb-badge-family{background:#4ea059;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:12px;display:inline-flex;align-items:center;gap:2px}.kb-badge-family::before{content:'F';font-weight:900;font-size:10px}.kb-notice-banner{margin:10px 16px 8px;background:#fff;border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.02);cursor:pointer}.kb-main-card{margin:8px 16px 12px;background:#fff;border-radius:22px;padding:22px 20px 18px;box-shadow:0 3px 12px rgba(0,0,0,.03)}.kb-acc-badge-icon{width:24px;height:24px;border-radius:50%;background:var(--kb-brown);color:var(--kb-yellow);font-weight:900;font-size:11px;display:flex;align-items:center;justify-content:center;margin-right:8px}.kb-acc-name-row{display:flex;align-items:center;font-size:14px;font-weight:700;color:#495057}.kb-acc-bal-row{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px}.kb-acc-bal{font-size:26px;font-weight:900;color:var(--kb-dark);letter-spacing:-.4px}.kb-btn-yellow{background:var(--kb-yellow);color:var(--kb-dark);border:none;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:800;cursor:pointer}.kb-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid #f1f3f5;font-size:13px;color:#6c757d}.kb-stock-box{margin:0 16px 14px;background:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.sub-nav-tabs{display:flex;gap:20px;padding:12px 20px 0;background:#fff;border-bottom:1px solid var(--kb-line);overflow-x:auto;white-space:nowrap}.sub-nav-tabs::-webkit-scrollbar{display:none}.sub-tab-item{font-size:15px;font-weight:600;color:var(--kb-sub-text);padding-bottom:10px;position:relative;cursor:pointer}.sub-tab-item.active{color:var(--kb-dark);font-weight:800}.sub-tab-item.active::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--kb-dark);border-radius:2px}.kb-app-card{background:#fff;margin:0 16px 12px;border-radius:20px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.kb-grid-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 8px;margin:16px 0}.kb-grid-nav-item{display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer}.kb-grid-nav-item .icon-wrap{width:50px;height:50px;border-radius:18px;background:#f3f5f8;display:flex;align-items:center;justify-content:center}.kb-grid-nav-item span{font-size:13px;font-weight:700;color:#495057}.bottom-tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:calc(62px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border-top:1px solid rgba(0,0,0,.06);display:grid;grid-template-columns:repeat(5,1fr);align-items:center;padding-top:4px;z-index:100}.tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#949ca4;cursor:pointer}.tab-item.active{color:var(--kb-dark);font-weight:800}.tab-item.active svg{stroke:var(--kb-dark)}.tab-item svg{width:23px;height:23px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.network-spinner-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.15);backdrop-filter:blur(1.5px);-webkit-backdrop-filter:blur(1.5px);z-index:9999;display:none;align-items:center;justify-content:center}.network-spinner-modal.active{display:flex}.ios-spinner{width:32px;height:32px;border:3.5px solid rgba(255,188,0,.3);border-top-color:var(--kb-yellow);border-radius:50%;animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style></head><body><div class="app-viewport">
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>KB스타뱅킹</title><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="KB스타뱅킹"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{--kb-yellow:#ffbc00;--kb-yellow-light:#fff9db;--kb-brown:#54483e;--kb-dark:#1a1d20;--kb-gray-bg:#f5f6f8;--kb-card-bg:#ffffff;--kb-sub-text:#8c949c;--kb-line:#ebeef1;--kb-blue:#1865c9;--kb-btn-bg:#eff2f5;--kb-sky-bg:#f0f4fa}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;user-select:none;-webkit-user-select:none}body{background:#000;display:flex;justify-content:center;min-height:100vh}.app-viewport{width:100%;max-width:430px;min-height:100vh;background:var(--kb-gray-bg);position:relative;display:flex;flex-direction:column;overflow-x:hidden;padding-top:env(safe-area-inset-top);box-shadow:0 0 25px rgba(0,0,0,.5)}.screen{display:none;flex-direction:column;flex:1;padding-bottom:calc(75px + env(safe-area-inset-bottom))}.screen.active{display:flex;animation:fadeIn .2s ease-in-out}@keyframes fadeIn{from{opacity:.92;transform:scale(.997)}to{opacity:1;transform:scale(1)}}.nav-header{padding:14px 20px 10px;display:flex;align-items:center;justify-content:space-between;background:var(--kb-card-bg);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(0,0,0,.03)}.nav-title{font-size:18px;font-weight:800;color:var(--kb-dark);display:flex;align-items:center;gap:6px}.header-icons{display:flex;gap:16px;align-items:center}.icon-btn{background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#3d4248;padding:2px}.icon-btn svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}.kb-top-user-row{padding:14px 20px 8px;display:flex;justify-content:space-between;align-items:center;background:#fff}.kb-user-grade{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:800;color:var(--kb-dark);cursor:pointer}.kb-badge-family{background:#4ea059;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:12px;display:inline-flex;align-items:center;gap:2px}.kb-badge-family::before{content:'F';font-weight:900;font-size:10px}.kb-notice-banner{margin:10px 16px 8px;background:#fff;border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.02);cursor:pointer}.kb-main-card{margin:8px 16px 12px;background:#fff;border-radius:22px;padding:22px 20px 18px;box-shadow:0 3px 12px rgba(0,0,0,.03)}.kb-acc-badge-icon{width:24px;height:24px;border-radius:50%;background:var(--kb-brown);color:var(--kb-yellow);font-weight:900;font-size:11px;display:flex;align-items:center;justify-content:center;margin-right:8px}.kb-acc-name-row{display:flex;align-items:center;font-size:14px;font-weight:700;color:#495057}.kb-acc-bal-row{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px}.kb-acc-bal{font-size:26px;font-weight:900;color:var(--kb-dark);letter-spacing:-.4px}.kb-btn-yellow{background:var(--kb-yellow);color:var(--kb-dark);border:none;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:800;cursor:pointer}.kb-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid #f1f3f5;font-size:13px;color:#6c757d}.kb-stock-box{margin:0 16px 14px;background:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.sub-nav-tabs{display:flex;gap:20px;padding:12px 20px 0;background:#fff;border-bottom:1px solid var(--kb-line);overflow-x:auto;white-space:nowrap}.sub-nav-tabs::-webkit-scrollbar{display:none}.sub-tab-item{font-size:15px;font-weight:600;color:var(--kb-sub-text);padding-bottom:10px;position:relative;cursor:pointer}.sub-tab-item.active{color:var(--kb-dark);font-weight:800}.sub-tab-item.active::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--kb-dark);border-radius:2px}.kb-app-card{background:#fff;margin:0 16px 12px;border-radius:20px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.bottom-tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:calc(62px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border-top:1px solid rgba(0,0,0,.06);display:grid;grid-template-columns:repeat(5,1fr);align-items:center;padding-top:4px;z-index:100}.tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#949ca4;cursor:pointer}.tab-item.active{color:var(--kb-dark);font-weight:800}.tab-item.active svg{stroke:var(--kb-dark)}.tab-item svg{width:23px;height:23px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.network-spinner-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.15);backdrop-filter:blur(1.5px);-webkit-backdrop-filter:blur(1.5px);z-index:9999;display:none;align-items:center;justify-content:center}.network-spinner-modal.active{display:flex}.ios-spinner{width:32px;height:32px;border:3.5px solid rgba(255,188,0,.3);border-top-color:var(--kb-yellow);border-radius:50%;animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style></head><body><div class="app-viewport">
 
 <!-- [탭 1] 홈 화면 -->
 <div id="screen-home" class="screen active">
@@ -33,24 +33,30 @@
     <svg style="width:18px;height:18px;color:#8a9299;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 
+  <!-- 메인 입출금 계좌 카드 -->
   <div class="kb-main-card">
-    <div class="kb-acc-name-row" onclick="openDetailWithDelay('checking')" style="cursor:pointer;">
+    <div class="kb-acc-name-row" onclick="openDetailWithDelay()" style="cursor:pointer;">
       <div class="kb-acc-badge-icon">kb</div>
-      <span>KB 별별통장 (7194) ❐</span>
+      <span>KB 별별통장 (7194)</span>
+      <svg style="width:13px;height:13px;margin-left:5px;color:#8a9299;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
     </div>
     <div class="kb-acc-bal-row">
-      <div class="kb-acc-bal" id="home-acc-bal" onclick="openDetailWithDelay('checking')" style="cursor:pointer;">0원</div>
+      <div class="kb-acc-bal" id="home-acc-bal" onclick="openDetailWithDelay()" style="cursor:pointer;">0원</div>
       <button class="kb-btn-yellow" onclick="triggerActionWithDelay()">이체</button>
     </div>
     <div class="kb-card-footer">
       <div style="display:flex;align-items:center;gap:14px;">
-        <span onclick="triggerActionWithDelay()" style="cursor:pointer;">⚙ 설정</span>
-        <span style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="toggleBalanceMask()">잔액 <span style="display:inline-block;width:34px;height:18px;background:#dee2e6;border-radius:9px;position:relative;"><span style="position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%;"></span></span></span>
+        <span onclick="triggerActionWithDelay()" style="display:flex;align-items:center;gap:4px;cursor:pointer;">
+          <svg style="width:14px;height:14px;color:#6c757d;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          설정
+        </span>
+        <span style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="toggleBalanceMask()">잔액 <span style="display:inline-block;width:34px;height:18px;background:#dee2e6;border-radius:9px;position:relative;"><span style="position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.2);"></span></span></span>
       </div>
       <span onclick="switchTabWithDelay('screen-list')" style="cursor:pointer;">더보기 ∨</span>
     </div>
   </div>
 
+  <!-- 오늘의 증시 -->
   <div class="kb-stock-box" onclick="triggerActionWithDelay()" style="cursor:pointer;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
       <span style="font-size:15px;font-weight:800;color:var(--kb-dark);">오늘의 증시</span>
@@ -78,7 +84,6 @@
     <div class="sub-tab-item" onclick="triggerActionWithDelay()">지출</div>
     <div class="sub-tab-item" onclick="triggerActionWithDelay()">투자</div>
     <div class="sub-tab-item" onclick="triggerActionWithDelay()">연금/절세</div>
-    <div class="sub-tab-item" onclick="triggerActionWithDelay()">금융팁</div>
   </div>
   <div class="kb-app-card" style="margin-top:14px;">
     <div style="font-size:14px;color:#6c757d;font-weight:600;">나의 총 자산 ↻</div>
@@ -92,7 +97,7 @@
   </div>
 </div>
 
-<!-- [탭 3] 국민지갑 화면 -->
+<!-- [탭 3] 지갑 화면 -->
 <div id="screen-wallet" class="screen">
   <div class="nav-header">
     <div style="display:flex;align-items:center;gap:8px;">
@@ -132,59 +137,144 @@
       <span class="nav-title">테마별서비스</span>
     </div>
   </div>
-  <div class="kb-grid-nav" style="padding:16px;">
-    <div class="kb-grid-nav-item" onclick="triggerActionWithDelay()"><div class="icon-wrap">📈</div><span>주식</span></div>
-    <div class="kb-grid-nav-item" onclick="triggerActionWithDelay()"><div class="icon-wrap">💳</div><span>카드</span></div>
-    <div class="kb-grid-nav-item" onclick="triggerActionWithDelay()"><div class="icon-wrap">☂️</div><span>보험</span></div>
-    <div class="kb-grid-nav-item" onclick="triggerActionWithDelay()"><div class="icon-wrap">💰</div><span>대출</span></div>
-  </div>
-</div>
-
-<!-- [계좌 목록 화면] -->
-<div id="screen-list" class="screen">
-  <div class="nav-header">
-    <div style="display:flex;align-items:center;gap:8px;">
-      <button class="icon-btn" onclick="switchTabWithDelay('screen-home')"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-      <span class="nav-title">전체계좌조회</span>
-    </div>
-  </div>
-  <div class="sub-nav-tabs"><div class="sub-tab-item active">KB국민은행</div><div class="sub-tab-item" onclick="triggerActionWithDelay()">다른금융</div></div>
-  <div style="padding:16px 20px 10px;display:flex;justify-content:space-between;align-items:center;">
-    <span style="font-size:14px;color:#6c757d;font-weight:600;">총 잔액 ⓘ</span>
-    <span style="font-size:20px;font-weight:900;color:var(--kb-dark);">4,800,000원</span>
-  </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 16px 14px;">
-    <button style="background:#f1f3f5;color:#495057;border:none;padding:12px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">모으기</button>
-    <button class="kb-btn-yellow" onclick="triggerActionWithDelay()">이체</button>
-  </div>
-  <div style="margin:6px 20px;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:800;color:var(--kb-dark);">
-    <span>예금 · 적금</span><span>4,800,000원 ∧</span>
-  </div>
-  <div class="kb-app-card" style="margin-top:8px;">
-    <div style="font-size:11px;color:#8a9299;border:1px solid #dee2e6;display:inline-block;padding:2px 6px;border-radius:4px;margin-bottom:6px;">한도제한계좌</div>
-    <div style="font-size:15px;font-weight:800;color:var(--kb-dark);">KB 별별통장</div>
-    <div style="font-size:12.5px;color:#8a9299;margin:2px 0 10px;">808802-04-297194 ❐</div>
-    <div style="text-align:right;font-size:22px;font-weight:900;color:var(--kb-dark);margin-bottom:12px;">0원</div>
-  </div>
-  <div class="kb-app-card" onclick="openDetailWithDelay('saving')" style="cursor:pointer;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-      <div><div style="font-size:15px;font-weight:800;color:var(--kb-dark);">KB미소드림적금</div><div style="font-size:12.5px;color:#8a9299;margin-top:2px;">808803-04-196944 ❐</div></div>
-      <span style="font-size:10.5px;background:var(--kb-yellow-light);color:#8d6b00;font-weight:800;padding:2px 6px;border-radius:4px;">자유적립식</span>
-    </div>
-    <div style="font-size:12px;color:#6c757d;margin-top:8px;">신규일 2025.06.10</div>
-    <div style="font-size:12px;color:#6c757d;">만기일 2027.06.10 (D-218)</div>
-    <div style="text-align:right;font-size:22px;font-weight:900;color:var(--kb-dark);margin-top:8px;">4,800,000원</div>
+  <div class="kb-app-card" style="margin-top:14px;">
+    <div style="font-size:15px;font-weight:800;color:var(--kb-dark);margin-bottom:10px;">금융 상품몰</div>
+    <div style="font-size:13px;color:#6c757d;">적금, 예금, 대출 맞춤 추천을 확인하세요.</div>
   </div>
 </div>
 
 <!-- =========================================
-     [적금 거래내역 화면: 보내주신 실제 KB UI 100% 일치]
+     [전체 계좌 목록 화면: 스크린샷 20 1:1 복제]
+     ========================================= -->
+<div id="screen-list" class="screen" style="background:#fff;">
+  <div class="nav-header" style="border-bottom:none;padding:14px 20px 8px;">
+    <div style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="switchTabWithDelay('screen-home')">
+      <svg style="width:20px;height:20px;stroke:#222;stroke-width:2.2;fill:none;" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      <span style="font-size:17.5px;font-weight:700;color:#212529;">전체계좌조회</span>
+    </div>
+    <div class="header-icons">
+      <button class="icon-btn" onclick="triggerActionWithDelay()"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg></button>
+      <button class="icon-btn" onclick="switchTabWithDelay('screen-home')"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></button>
+      <button class="icon-btn" onclick="triggerActionWithDelay()"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+    </div>
+  </div>
+
+  <!-- 알림 배너 -->
+  <div style="margin:6px 20px 14px;padding:13px 16px;background:#fff;border:1px solid #ebeef1;border-radius:12px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;" onclick="triggerActionWithDelay()">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div style="width:26px;height:26px;border-radius:50%;background:#343a40;display:flex;align-items:center;justify-content:center;color:#ffbc00;font-size:12px;">🔔</div>
+      <span style="font-size:13.5px;font-weight:600;color:#212529;">입출금 알림을 실시간으로 받아보세요!</span>
+    </div>
+    <span style="color:#adb5bd;font-size:14px;">&gt;</span>
+  </div>
+
+  <!-- 총 잔액 헤더 & 금액 -->
+  <div style="padding:0 20px 14px;">
+    <div style="display:flex;align-items:center;gap:6px;font-size:13.5px;color:#6c757d;font-weight:600;">
+      <span>총 잔액</span>
+      <span style="font-size:12px;color:#adb5bd;border:1px solid #ced4da;width:15px;height:15px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">?</span>
+      <span style="display:inline-block;width:34px;height:18px;background:#8d7968;border-radius:9px;position:relative;margin-left:4px;cursor:pointer;" onclick="toggleBalanceMask()">
+        <span style="position:absolute;top:2px;right:2px;width:14px;height:14px;background:#fff;border-radius:50%;"></span>
+      </span>
+    </div>
+    <div style="text-align:right;margin-top:2px;">
+      <span style="font-size:26px;font-weight:900;color:#1a1d20;letter-spacing:-.4px;">4,800,000원</span>
+    </div>
+  </div>
+
+  <!-- 모으기 / 이체 2버튼 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 20px 18px;">
+    <button style="background:#eff2f5;color:#2b2f33;border:none;padding:13px 0;border-radius:7px;font-size:14.5px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">모으기</button>
+    <button style="background:var(--kb-yellow);color:#1a1d20;border:none;padding:13px 0;border-radius:7px;font-size:14.5px;font-weight:800;cursor:pointer;" onclick="triggerActionWithDelay()">이체</button>
+  </div>
+
+  <div style="height:1px;background:#ebeef1;margin-bottom:12px;"></div>
+
+  <!-- 다른금융등록 / 목록형 / 순서변경 -->
+  <div style="padding:0 20px 14px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#495057;font-weight:600;">
+    <div style="display:flex;align-items:center;gap:4px;cursor:pointer;" onclick="triggerActionWithDelay()">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #495057;font-size:11px;font-weight:800;">+</span>
+      <span>다른금융등록</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="display:flex;align-items:center;gap:4px;cursor:pointer;" onclick="triggerActionWithDelay()">
+        <svg style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+        목록형
+      </span>
+      <span style="display:flex;align-items:center;gap:4px;cursor:pointer;" onclick="triggerActionWithDelay()">
+        <svg style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="4" x2="7" y2="20"></line><polyline points="3 8 7 4 11 8"></polyline><line x1="17" y1="4" x2="17" y2="20"></line><polyline points="13 16 17 20 21 16"></polyline></svg>
+        순서변경
+      </span>
+    </div>
+  </div>
+
+  <!-- 예금 · 적금 아코디언 바 -->
+  <div style="background:var(--kb-sky-bg);margin:0 16px 12px;padding:14px 18px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;font-size:14.5px;font-weight:800;color:#212529;">
+    <span>예금 · 적금</span>
+    <span style="display:flex;align-items:center;gap:6px;">
+      4,800,000원
+      <svg style="width:16px;height:16px;color:#6c757d;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </span>
+  </div>
+
+  <!-- 카드 1: KB 별별통장 -->
+  <div style="margin:0 16px 14px;padding:18px;border:1px solid #ebeef1;border-radius:16px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.02);">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+      <div>
+        <span style="display:inline-block;border:1px solid #d0d7de;color:#6c757d;font-size:11px;font-weight:600;padding:2px 6px;border-radius:4px;margin-bottom:8px;">한도제한계좌</span>
+        <div style="font-size:15px;font-weight:700;color:#212529;">KB 별별통장</div>
+        <div style="font-size:13.5px;font-weight:800;color:#1a1d20;margin:3px 0 12px;display:flex;align-items:center;gap:4px;">
+          <span>808802-04-297194</span>
+          <svg style="width:13px;height:13px;color:#8a9299;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </div>
+        <button style="background:#fff;border:1px solid #ced4da;color:#495057;padding:5px 12px;border-radius:14px;font-size:12px;font-weight:600;cursor:pointer;" onclick="triggerActionWithDelay()">전용화면</button>
+      </div>
+      <button class="icon-btn" onclick="triggerActionWithDelay()" style="color:#adb5bd;"><svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="19" r="1.5"></circle></svg></button>
+    </div>
+
+    <div style="text-align:right;margin:16px 0 14px;">
+      <span style="font-size:24px;font-weight:900;color:#1a1d20;letter-spacing:-.4px;">0원</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <button style="background:#eff2f5;color:#2b2f33;border:none;padding:11px 0;border-radius:7px;font-size:13.5px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">모으기</button>
+      <button style="background:#eff2f5;color:#2b2f33;border:none;padding:11px 0;border-radius:7px;font-size:13.5px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">이체</button>
+    </div>
+  </div>
+
+  <!-- 카드 2: KB미소드림적금 (25일 기준 날짜 갱신) -->
+  <div style="margin:0 16px 20px;padding:18px;border:1px solid #ebeef1;border-radius:16px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.02);cursor:pointer;" onclick="openDetailWithDelay()">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+      <div>
+        <div style="font-size:15px;font-weight:700;color:#212529;">KB미소드림적금</div>
+        <div style="font-size:13.5px;font-weight:800;color:#1a1d20;margin:3px 0 10px;display:flex;align-items:center;gap:4px;">
+          <span>808803-04-196944</span>
+          <svg style="width:13px;height:13px;color:#8a9299;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </div>
+        <div style="font-size:12.5px;color:#8c949c;line-height:1.4;">
+          신규일 2025.06.25<br>
+          만기일 2027.06.25 (D-233)
+        </div>
+      </div>
+      <button class="icon-btn" onclick="event.stopPropagation();triggerActionWithDelay();" style="color:#adb5bd;"><svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="19" r="1.5"></circle></svg></button>
+    </div>
+
+    <div style="text-align:right;margin:16px 0 14px;">
+      <span style="font-size:24px;font-weight:900;color:#1a1d20;letter-spacing:-.4px;">4,800,000원</span>
+    </div>
+
+    <button style="width:100%;background:#eff2f5;color:#2b2f33;border:none;padding:11px 0;border-radius:7px;font-size:13.5px;font-weight:700;cursor:pointer;" onclick="event.stopPropagation();triggerActionWithDelay();">입금</button>
+  </div>
+</div>
+
+<!-- =========================================
+     [적금 거래내역 화면: 25일 납입 & 신한과 동일한 오후 분산 시간대 적용]
      ========================================= -->
 <div id="screen-detail" class="screen" style="background:#fff;">
-  <div class="nav-header" style="border-bottom:none;padding:12px 20px;">
+  <div class="nav-header" style="border-bottom:none;padding:14px 20px 8px;">
     <div style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="switchTabWithDelay('screen-list')">
-      <svg style="width:20px;height:20px;stroke:#333;stroke-width:2.2;fill:none;" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      <span style="font-size:17px;font-weight:700;color:#212529;">거래내역조회</span>
+      <svg style="width:20px;height:20px;stroke:#222;stroke-width:2.2;fill:none;" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      <span style="font-size:17.5px;font-weight:700;color:#212529;letter-spacing:-.2px;">거래내역조회</span>
     </div>
     <div class="header-icons">
       <button class="icon-btn" onclick="switchTabWithDelay('screen-home')"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></button>
@@ -192,51 +282,50 @@
     </div>
   </div>
 
-  <div style="padding:10px 20px 20px;">
+  <div style="padding:10px 20px 24px;">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;">
       <div>
-        <div style="font-size:15px;color:#495057;font-weight:600;display:flex;align-items:center;gap:4px;">
+        <div style="font-size:15px;color:#383b40;font-weight:600;display:flex;align-items:center;gap:5px;letter-spacing:-.1px;">
           <span>KB미소드림적금</span>
-          <svg style="width:13px;height:13px;color:#8a9299;" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
+          <svg style="width:13px;height:13px;color:#8c949c;" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
         </div>
-        <div style="font-size:18px;font-weight:800;color:#212529;margin-top:4px;letter-spacing:-.2px;">808803-04-196944</div>
+        <div style="font-size:19px;font-weight:900;color:#1a1d20;margin-top:6px;letter-spacing:-.3px;">808803-04-196944</div>
       </div>
-      <button class="icon-btn" onclick="triggerActionWithDelay()"><svg style="width:20px;height:20px;color:#6c757d;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></button>
+      <button class="icon-btn" onclick="triggerActionWithDelay()" style="color:#6c7680;padding-top:2px;">
+        <svg style="width:21px;height:21px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      </button>
     </div>
 
-    <!-- 우측 정렬 대형 잔액 -->
-    <div style="text-align:right;margin:24px 0 14px;">
-      <span style="font-size:27px;font-weight:900;color:#212529;letter-spacing:-.4px;">4,800,000원</span>
+    <div style="text-align:right;margin:28px 0 22px;">
+      <span style="font-size:29px;font-weight:900;color:#1a1d20;letter-spacing:-.6px;">4,800,000원</span>
     </div>
 
-    <!-- 만기 진행 프로그레스 바 & D-218 말풍선 -->
-    <div style="position:relative;margin:28px 0 10px;">
-      <div style="position:absolute;top:-26px;left:66.6%;transform:translateX(-50%);background:#495057;color:#fff;font-size:11px;font-weight:800;padding:2px 8px;border-radius:10px;">
-        D-218
-        <div style="position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #495057;"></div>
+    <!-- D-233 다크 뱃지 & 프로그레스 바 -->
+    <div style="position:relative;margin:24px 0 12px;">
+      <div style="position:absolute;top:-27px;left:66.6%;transform:translateX(-50%);background:#383b40;color:#ffffff;font-size:11.5px;font-weight:800;padding:2.5px 9px 2px;border-radius:12px;letter-spacing:.2px;display:flex;align-items:center;justify-content:center;">
+        D-233
+        <span style="position:absolute;bottom:-3.5px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #383b40;"></span>
       </div>
-      <div style="height:7px;background:#f1f3f5;border-radius:4px;overflow:hidden;">
-        <div style="height:100%;width:66.6%;background:var(--kb-yellow);border-radius:4px;"></div>
+      <div style="height:4.5px;background:#f0f2f5;border-radius:3px;overflow:hidden;">
+        <div style="height:100%;width:66.6%;background:var(--kb-yellow);border-radius:3px;"></div>
       </div>
     </div>
 
-    <!-- 신규일 / 만기일 -->
-    <div style="display:flex;justify-content:space-between;font-size:12.5px;color:#8a9299;margin-bottom:20px;">
-      <span>신규일 2025.06.10</span>
-      <span>만기일 2027.06.10</span>
+    <div style="display:flex;justify-content:space-between;font-size:12.5px;color:#8c949c;font-weight:500;margin-bottom:24px;">
+      <span>신규일 2025.06.25</span>
+      <span>만기일 2027.06.25</span>
     </div>
 
-    <!-- 2버튼: 입금 / 해지예상조회 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-      <button style="background:#f1f3f5;color:#495057;border:none;padding:12px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">입금</button>
-      <button style="background:#f1f3f5;color:#495057;border:none;padding:12px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">해지예상조회</button>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;">
+      <button style="background:var(--kb-btn-bg);color:#2b2f33;border:none;padding:13px 0;border-radius:7px;font-size:14.5px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">입금</button>
+      <button style="background:var(--kb-btn-bg);color:#2b2f33;border:none;padding:13px 0;border-radius:7px;font-size:14.5px;font-weight:700;cursor:pointer;" onclick="triggerActionWithDelay()">해지예상조회</button>
     </div>
   </div>
 
   <div style="height:8px;background:#f5f6f8;border-top:1px solid #ebeef1;border-bottom:1px solid #ebeef1;"></div>
 
-  <!-- 거래내역 카드 리스트 영역 -->
-  <div id="history-container" style="padding:0 20px;"></div>
+  <!-- 거래내역 카드 리스트 -->
+  <div id="history-container" style="padding:4px 20px 20px;"></div>
 </div>
 
 <!-- 하단 5개 탭바 -->
@@ -263,26 +352,25 @@
 </div>
 
 <script>
-// KB미소드림적금: 2025.06 ~ 2026.10 총 16회 납입 (2026년 2월분 누락)
-// 납입시간: 오후 1시 이후 분산 (13:14 ~ 18:42), 지점명: 등촌역
+// 매월 25일 납입 + 신한과 동일한 오후 1시 이후 분산 시간대 적용 (2026.02 누락)
 const savingHistory=[
-  {round:16,month:"2026.10월분",date:"2026.10.10",amount:"300,000원",balance:"4,800,000원",branch:"등촌역",type:"자동이체"},
-  {round:15,month:"2026.09월분",date:"2026.09.10",amount:"300,000원",balance:"4,500,000원",branch:"등촌역",type:"자동이체"},
-  {round:14,month:"2026.08월분",date:"2026.08.10",amount:"300,000원",balance:"4,200,000원",branch:"등촌역",type:"자동이체"},
-  {round:13,month:"2026.07월분",date:"2026.07.10",amount:"300,000원",balance:"3,900,000원",branch:"등촌역",type:"자동이체"},
-  {round:12,month:"2026.06월분",date:"2026.06.10",amount:"300,000원",balance:"3,600,000원",branch:"등촌역",type:"자동이체"},
-  {round:11,month:"2026.05월분",date:"2026.05.10",amount:"300,000원",balance:"3,300,000원",branch:"등촌역",type:"자동이체"},
-  {round:10,month:"2026.04월분",date:"2026.04.10",amount:"300,000원",balance:"3,000,000원",branch:"등촌역",type:"자동이체"},
-  {round:9,month:"2026.03월분",date:"2026.03.10",amount:"300,000원",balance:"2,700,000원",branch:"등촌역",type:"자동이체"},
-  // 2026.02 누락됨
-  {round:8,month:"2026.01월분",date:"2026.01.10",amount:"300,000원",balance:"2,400,000원",branch:"등촌역",type:"자동이체"},
-  {round:7,month:"2025.12월분",date:"2025.12.10",amount:"300,000원",balance:"2,100,000원",branch:"등촌역",type:"자동이체"},
-  {round:6,month:"2025.11월분",date:"2025.11.10",amount:"300,000원",balance:"1,800,000원",branch:"등촌역",type:"자동이체"},
-  {round:5,month:"2025.10월분",date:"2025.10.10",amount:"300,000원",balance:"1,500,000원",branch:"등촌역",type:"자동이체"},
-  {round:4,month:"2025.09월분",date:"2025.09.10",amount:"300,000원",balance:"1,200,000원",branch:"등촌역",type:"자동이체"},
-  {round:3,month:"2025.08월분",date:"2025.08.10",amount:"300,000원",balance:"900,000원",branch:"등촌역",type:"자동이체"},
-  {round:2,month:"2025.07월분",date:"2025.07.10",amount:"300,000원",balance:"600,000원",branch:"등촌역",type:"자동이체"},
-  {round:1,month:"2025.06월분",date:"2025.06.10",amount:"300,000원",balance:"300,000원",branch:"등촌역",type:"신규"}
+  {round:16,month:"2026.10월분",date:"2026.10.25",time:"14:28",amount:"300,000원",balance:"4,800,000원",branch:"등촌역",type:"자동이체"},
+  {round:15,month:"2026.09월분",date:"2026.09.25",time:"16:05",amount:"300,000원",balance:"4,500,000원",branch:"등촌역",type:"자동이체"},
+  {round:14,month:"2026.08월분",date:"2026.08.25",time:"13:14",amount:"300,000원",balance:"4,200,000원",branch:"등촌역",type:"자동이체"},
+  {round:13,month:"2026.07월분",date:"2026.07.25",time:"17:42",amount:"300,000원",balance:"3,900,000원",branch:"등촌역",type:"자동이체"},
+  {round:12,month:"2026.06월분",date:"2026.06.25",time:"15:30",amount:"300,000원",balance:"3,600,000원",branch:"등촌역",type:"자동이체"},
+  {round:11,month:"2026.05월분",date:"2026.05.25",time:"18:22",amount:"300,000원",balance:"3,300,000원",branch:"등촌역",type:"자동이체"},
+  {round:10,month:"2026.04월분",date:"2026.04.25",time:"13:50",amount:"300,000원",balance:"3,000,000원",branch:"등촌역",type:"자동이체"},
+  {round:9,month:"2026.03월분",date:"2026.03.25",time:"16:47",amount:"300,000원",balance:"2,700,000원",branch:"등촌역",type:"자동이체"},
+  // 2026.02월분 한 달 누락
+  {round:8,month:"2026.01월분",date:"2026.01.25",time:"14:15",amount:"300,000원",balance:"2,400,000원",branch:"등촌역",type:"자동이체"},
+  {round:7,month:"2025.12월분",date:"2025.12.25",time:"19:10",amount:"300,000원",balance:"2,100,000원",branch:"등촌역",type:"자동이체"},
+  {round:6,month:"2025.11월분",date:"2025.11.25",time:"15:08",amount:"300,000원",balance:"1,800,000원",branch:"등촌역",type:"자동이체"},
+  {round:5,month:"2025.10월분",date:"2025.10.25",time:"13:35",amount:"300,000원",balance:"1,500,000원",branch:"등촌역",type:"자동이체"},
+  {round:4,month:"2025.09월분",date:"2025.09.25",time:"17:19",amount:"300,000원",balance:"1,200,000원",branch:"등촌역",type:"자동이체"},
+  {round:3,month:"2025.08월분",date:"2025.08.25",time:"14:52",amount:"300,000원",balance:"900,000원",branch:"등촌역",type:"자동이체"},
+  {round:2,month:"2025.07월분",date:"2025.07.25",time:"16:11",amount:"300,000원",balance:"600,000원",branch:"등촌역",type:"자동이체"},
+  {round:1,month:"2025.06월분",date:"2025.06.25",time:"13:40",amount:"300,000원",balance:"300,000원",branch:"등촌역",type:"신규"}
 ];
 
 let isMasked=false;
@@ -320,8 +408,7 @@ function triggerActionWithDelay(){
   setTimeout(()=>{s.classList.remove('active');},500);
 }
 
-// 실제 스크린샷과 1:1 일치하는 상세 거래내역 렌더링
-function openDetailWithDelay(type){
+function openDetailWithDelay(){
   const s=document.getElementById('network-spinner');
   s.classList.add('active');
   setTimeout(()=>{
@@ -331,25 +418,25 @@ function openDetailWithDelay(type){
 
     savingHistory.forEach(item=>{
       const card=document.createElement('div');
-      card.style.cssText="padding:18px 0;border-bottom:1px solid #ebeef1;";
+      card.style.cssText="padding:20px 0 16px;border-bottom:1px solid #ebeef1;";
       card.innerHTML=`
-        <div style="font-size:16px;margin-bottom:14px;">
-          <b style="color:#212529;">${item.round}회차</b>
-          <span style="color:#8a9299;font-weight:500;margin-left:6px;">|  ${item.month}</span>
+        <div style="font-size:16px;margin-bottom:14px;letter-spacing:-.2px;">
+          <b style="color:#1a1d20;font-weight:800;">${item.round}회차</b>
+          <span style="color:#8c949c;font-weight:400;margin-left:8px;">|  ${item.month}</span>
         </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:14px;">
-          <span style="color:#6c757d;">납입일자</span>
-          <span style="color:#212529;font-weight:600;">${item.date}</span>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;font-size:14px;">
+          <span style="color:#6c7680;font-weight:500;">납입일자</span>
+          <span style="color:#1a1d20;font-weight:600;">${item.date}</span>
         </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:14px;">
-          <span style="color:#6c757d;">납입금액</span>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;font-size:14px;">
+          <span style="color:#6c7680;font-weight:500;">납입금액</span>
           <span style="color:var(--kb-blue);font-weight:700;">${item.amount}</span>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px;">
-          <span style="color:#6c757d;">납입 후 잔액</span>
-          <span style="color:#212529;font-weight:700;">${item.balance}</span>
+          <span style="color:#6c7680;font-weight:500;">납입 후 잔액</span>
+          <span style="color:#1a1d20;font-weight:700;">${item.balance}</span>
         </div>
-        <div style="text-align:right;font-size:12px;color:#8a9299;margin-top:10px;">
+        <div style="text-align:right;font-size:12px;color:#8c949c;font-weight:500;margin-top:10px;">
           ${item.branch}  |  ${item.type}
         </div>
       `;
