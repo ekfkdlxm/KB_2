@@ -68,9 +68,7 @@
   </div>
 </div>
 
-<!-- =========================================
-     [탭 2] 자산 화면 (스크린샷 15 기반 고밀도 구현)
-     ========================================= -->
+<!-- [탭 2] 자산 화면 -->
 <div id="screen-asset" class="screen">
   <div class="nav-header">
     <div style="display:flex;align-items:center;gap:8px;">
@@ -123,9 +121,7 @@
   </div>
 </div>
 
-<!-- =========================================
-     [탭 3] 국민지갑 화면 (스크린샷 14 기반 고밀도 구현)
-     ========================================= -->
+<!-- [탭 3] 국민지갑 화면 -->
 <div id="screen-wallet" class="screen">
   <div class="nav-header">
     <div style="display:flex;align-items:center;gap:8px;">
@@ -193,9 +189,7 @@
   </div>
 </div>
 
-<!-- =========================================
-     [탭 4] 혜택 화면 (스크린샷 13 기반 고밀도 구현)
-     ========================================= -->
+<!-- [탭 4] 혜택 화면 -->
 <div id="screen-benefit" class="screen">
   <div class="nav-header">
     <div style="display:flex;align-items:center;gap:8px;">
@@ -269,9 +263,7 @@
   </div>
 </div>
 
-<!-- =========================================
-     [탭 5] 상품 화면 (스크린샷 12 기반 고밀도 구현)
-     ========================================= -->
+<!-- [탭 5] 상품 화면 -->
 <div id="screen-product" class="screen">
   <div class="nav-header">
     <div style="display:flex;align-items:center;gap:8px;">
@@ -285,7 +277,6 @@
     <div style="font-size:20px;font-weight:900;color:var(--kb-dark);margin-top:2px;">테마가 있는 생활</div>
   </div>
 
-  <!-- 정밀 벡터 SVG 8구 그리드 -->
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px 8px;padding:18px 16px 12px;background:#fff;margin:12px 16px;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,.02);">
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:48px;height:48px;border-radius:16px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;color:#2e7d32;"><svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div>
@@ -331,7 +322,6 @@
     <span style="color:#adb5bd;">&gt;</span>
   </div>
 
-  <!-- Monthly Pick 캐러셀 -->
   <div style="margin:16px 20px 8px;font-size:17px;font-weight:800;color:var(--kb-dark);">Monthly Pick</div>
   <div style="display:flex;gap:12px;padding:0 16px 14px;overflow-x:auto;">
     <div style="min-width:180px;background:#e1f5fe;border-radius:16px;padding:16px;text-align:center;">
@@ -345,9 +335,7 @@
   </div>
 </div>
 
-<!-- =========================================
-     [전체 계좌 목록 화면]
-     ========================================= -->
+<!-- [전체 계좌 목록 화면] -->
 <div id="screen-list" class="screen" style="background:#fff;">
   <div class="nav-header" style="border-bottom:none;padding:14px 20px 8px;">
     <div style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="switchTabWithDelay('screen-home')">
@@ -414,7 +402,6 @@
     </span>
   </div>
 
-  <!-- 카드 1: 별별통장 -->
   <div style="margin:0 16px 14px;padding:18px;border:1px solid #ebeef1;border-radius:16px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.02);">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;">
       <div>
@@ -439,7 +426,6 @@
     </div>
   </div>
 
-  <!-- 카드 2: KB미소드림적금 -->
   <div style="margin:0 16px 20px;padding:18px;border:1px solid #ebeef1;border-radius:16px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.02);cursor:pointer;" onclick="openDetailWithDelay()">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;">
       <div>
@@ -464,9 +450,7 @@
   </div>
 </div>
 
-<!-- =========================================
-     [적금 거래내역 화면: 1:1 복제 완성본]
-     ========================================= -->
+<!-- [적금 거래내역 화면] -->
 <div id="screen-detail" class="screen" style="background:#fff;">
   <div class="nav-header" style="border-bottom:none;padding:14px 20px 8px;">
     <div style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="switchTabWithDelay('screen-list')">
@@ -489,7 +473,7 @@
         <div style="font-size:19px;font-weight:900;color:#1a1d20;margin-top:6px;letter-spacing:-.3px;">808803-04-196944</div>
       </div>
       <button class="icon-btn" onclick="triggerActionWithDelay()" style="color:#6c7680;padding-top:2px;">
-        <svg style="width:21px;height:21px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <svg style="width:21px;height:21px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
       </button>
     </div>
 
