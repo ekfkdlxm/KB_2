@@ -1,4 +1,36 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>KB스타뱅킹</title><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="KB스타뱅킹"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{--kb-yellow:#ffbc00;--kb-yellow-light:#fff9db;--kb-brown:#54483e;--kb-dark:#1a1d20;--kb-gray-bg:#f5f6f8;--kb-card-bg:#ffffff;--kb-sub-text:#8c949c;--kb-line:#ebeef1;--kb-blue:#1865c9;--kb-btn-bg:#eff2f5;--kb-sky-bg:#f0f4fa}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;user-select:none;-webkit-user-select:none}body{background:#000;display:flex;justify-content:center;min-height:100vh}.app-viewport{width:100%;max-width:430px;min-height:100vh;background:var(--kb-gray-bg);position:relative;display:flex;flex-direction:column;overflow-x:hidden;padding-top:env(safe-area-inset-top);box-shadow:0 0 25px rgba(0,0,0,.5)}.screen{display:none;flex-direction:column;flex:1;padding-bottom:calc(75px + env(safe-area-inset-bottom))}.screen.active{display:flex;animation:fadeIn .2s ease-in-out}@keyframes fadeIn{from{opacity:.92;transform:scale(.997)}to{opacity:1;transform:scale(1)}}.nav-header{padding:14px 20px 10px;display:flex;align-items:center;justify-content:space-between;background:var(--kb-card-bg);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(0,0,0,.03)}.nav-title{font-size:18px;font-weight:800;color:var(--kb-dark);display:flex;align-items:center;gap:6px}.header-icons{display:flex;gap:16px;align-items:center}.icon-btn{background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#3d4248;padding:2px}.icon-btn svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}.kb-top-user-row{padding:14px 20px 8px;display:flex;justify-content:space-between;align-items:center;background:#fff}.kb-user-grade{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:800;color:var(--kb-dark);cursor:pointer}.kb-badge-family{background:#4ea059;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:12px;display:inline-flex;align-items:center;gap:2px}.kb-badge-family::before{content:'F';font-weight:900;font-size:10px}.kb-notice-banner{margin:10px 16px 8px;background:#fff;border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.02);cursor:pointer}.kb-main-card{margin:8px 16px 12px;background:#fff;border-radius:22px;padding:22px 20px 18px;box-shadow:0 3px 12px rgba(0,0,0,.03)}.kb-acc-badge-icon{width:24px;height:24px;border-radius:50%;background:var(--kb-brown);color:var(--kb-yellow);font-weight:900;font-size:11px;display:flex;align-items:center;justify-content:center;margin-right:8px}.kb-acc-name-row{display:flex;align-items:center;font-size:14px;font-weight:700;color:#495057}.kb-acc-bal-row{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px}.kb-acc-bal{font-size:26px;font-weight:900;color:var(--kb-dark);letter-spacing:-.4px}.kb-btn-yellow{background:var(--kb-yellow);color:var(--kb-dark);border:none;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:800;cursor:pointer}.kb-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid #f1f3f5;font-size:13px;color:#6c757d}.kb-stock-box{margin:0 16px 14px;background:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.sub-nav-tabs{display:flex;gap:20px;padding:12px 20px 0;background:#fff;border-bottom:1px solid var(--kb-line);overflow-x:auto;white-space:nowrap}.sub-nav-tabs::-webkit-scrollbar{display:none}.sub-tab-item{font-size:15px;font-weight:600;color:var(--kb-sub-text);padding-bottom:10px;position:relative;cursor:pointer}.sub-tab-item.active{color:var(--kb-dark);font-weight:800}.sub-tab-item.active::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--kb-dark);border-radius:2px}.kb-app-card{background:#fff;margin:0 16px 12px;border-radius:20px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.bottom-tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:calc(62px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border-top:1px solid rgba(0,0,0,.06);display:grid;grid-template-columns:repeat(5,1fr);align-items:center;padding-top:4px;z-index:100}.tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#949ca4;cursor:pointer}.tab-item.active{color:var(--kb-dark);font-weight:800}.tab-item.active svg{stroke:var(--kb-dark)}.tab-item svg{width:23px;height:23px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.network-spinner-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.15);backdrop-filter:blur(1.5px);-webkit-backdrop-filter:blur(1.5px);z-index:9999;display:none;align-items:center;justify-content:center}.network-spinner-modal.active{display:flex}.ios-spinner{width:32px;height:32px;border:3.5px solid rgba(255,188,0,.3);border-top-color:var(--kb-yellow);border-radius:50%;animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style></head><body><div class="app-viewport">
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>KB스타뱅킹</title><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="KB스타뱅킹"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{--kb-yellow:#ffbc00;--kb-yellow-light:#fff9db;--kb-brown:#54483e;--kb-dark:#1a1d20;--kb-gray-bg:#f5f6f8;--kb-card-bg:#ffffff;--kb-sub-text:#8c949c;--kb-line:#ebeef1;--kb-blue:#1865c9;--kb-btn-bg:#eff2f5;--kb-sky-bg:#f0f4fa;--error:#f04452}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;user-select:none;-webkit-user-select:none}body{background:#000;display:flex;justify-content:center;min-height:100vh}.app-viewport{width:100%;max-width:430px;min-height:100vh;background:var(--kb-gray-bg);position:relative;display:flex;flex-direction:column;overflow-x:hidden;padding-top:env(safe-area-inset-top);box-shadow:0 0 25px rgba(0,0,0,.5)}.screen{display:none;flex-direction:column;flex:1;padding-bottom:calc(75px + env(safe-area-inset-bottom))}.screen.active{display:flex;animation:fadeIn .2s ease-in-out}@keyframes fadeIn{from{opacity:.92;transform:scale(.997)}to{opacity:1;transform:scale(1)}}/* KB 전용 보안 키패드 화면 */.lock-screen{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:100vh;background:#fff;z-index:99999;display:flex;flex-direction:column;justify-content:space-between;padding:calc(46px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));box-sizing:border-box}.lock-screen.hidden{display:none}.lock-header{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:16px}.kb-lock-badge{width:52px;height:52px;border-radius:50%;background:var(--kb-yellow);color:#fff;font-weight:900;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(255,188,0,.35)}.lock-title{font-size:20px;font-weight:900;color:var(--kb-dark);margin-top:16px;letter-spacing:-.3px}.lock-sub{font-size:13.5px;color:var(--kb-sub-text);margin-top:6px;min-height:18px}.lock-sub.error{color:var(--error);font-weight:700}.pin-dots{display:flex;gap:14px;margin-top:32px;justify-content:center}.pin-dot{width:14px;height:14px;border-radius:50%;background:#e5e8eb;transition:background-color .15s,transform .15s}.pin-dot.filled{background:var(--kb-yellow);transform:scale(1.15)}.pin-dots.shake{animation:shakeAnim .4s ease-in-out}@keyframes shakeAnim{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-10px)}40%,80%{transform:translateX(10px)}}.keypad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 10px;margin-bottom:10px}.key-btn{height:60px;border-radius:14px;border:none;background:transparent;font-size:24px;font-weight:700;color:#191f28;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .1s}.key-btn:active{background:#f8f9fa}.key-btn.fn{font-size:15px;color:#54483e;font-weight:700}.nav-header{padding:14px 20px 10px;display:flex;align-items:center;justify-content:space-between;background:var(--kb-card-bg);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(0,0,0,.03)}.nav-title{font-size:18px;font-weight:800;color:var(--kb-dark);display:flex;align-items:center;gap:6px}.header-icons{display:flex;gap:16px;align-items:center}.icon-btn{background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#3d4248;padding:2px}.icon-btn svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}.kb-top-user-row{padding:14px 20px 8px;display:flex;justify-content:space-between;align-items:center;background:#fff}.kb-user-grade{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:800;color:var(--kb-dark);cursor:pointer}.kb-badge-family{background:#4ea059;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:12px;display:inline-flex;align-items:center;gap:2px}.kb-badge-family::before{content:'F';font-weight:900;font-size:10px}.kb-notice-banner{margin:10px 16px 8px;background:#fff;border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.02);cursor:pointer}.kb-main-card{margin:8px 16px 12px;background:#fff;border-radius:22px;padding:22px 20px 18px;box-shadow:0 3px 12px rgba(0,0,0,.03)}.kb-acc-badge-icon{width:24px;height:24px;border-radius:50%;background:var(--kb-brown);color:var(--kb-yellow);font-weight:900;font-size:11px;display:flex;align-items:center;justify-content:center;margin-right:8px}.kb-acc-name-row{display:flex;align-items:center;font-size:14px;font-weight:700;color:#495057}.kb-acc-bal-row{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px}.kb-acc-bal{font-size:26px;font-weight:900;color:var(--kb-dark);letter-spacing:-.4px}.kb-btn-yellow{background:var(--kb-yellow);color:var(--kb-dark);border:none;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:800;cursor:pointer}.kb-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid #f1f3f5;font-size:13px;color:#6c757d}.sub-nav-tabs{display:flex;gap:20px;padding:12px 20px 0;background:#fff;border-bottom:1px solid var(--kb-line);overflow-x:auto;white-space:nowrap}.sub-nav-tabs::-webkit-scrollbar{display:none}.sub-tab-item{font-size:15px;font-weight:600;color:var(--kb-sub-text);padding-bottom:10px;position:relative;cursor:pointer}.sub-tab-item.active{color:var(--kb-dark);font-weight:800}.sub-tab-item.active::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--kb-dark);border-radius:2px}.kb-app-card{background:#fff;margin:0 16px 12px;border-radius:20px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.bottom-tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:calc(62px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border-top:1px solid rgba(0,0,0,.06);display:grid;grid-template-columns:repeat(5,1fr);align-items:center;padding-top:4px;z-index:100}.tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#949ca4;cursor:pointer}.tab-item.active{color:var(--kb-dark);font-weight:800}.tab-item.active svg{stroke:var(--kb-dark)}.tab-item svg{width:23px;height:23px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.network-spinner-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.15);backdrop-filter:blur(1.5px);-webkit-backdrop-filter:blur(1.5px);z-index:999999;display:none;align-items:center;justify-content:center}.network-spinner-modal.active{display:flex}.ios-spinner{width:32px;height:32px;border:3.5px solid rgba(255,188,0,.3);border-top-color:var(--kb-yellow);border-radius:50%;animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style></head><body><div class="app-viewport">
+
+<!-- =========================================
+     [KB 전용 보안 키패드 잠금 화면 (PIN 741851)]
+     ========================================= -->
+<div id="lock-screen" class="lock-screen">
+  <div class="lock-header">
+    <div class="kb-lock-badge">★</div>
+    <div class="lock-title">KB국민인증서 간편비밀번호</div>
+    <div id="lock-msg" class="lock-sub">6자리 비밀번호를 입력해주세요</div>
+    <div id="pin-dots" class="pin-dots">
+      <div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div>
+      <div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div>
+    </div>
+  </div>
+
+  <div class="keypad-grid">
+    <button class="key-btn" onclick="pressPin('1')">1</button>
+    <button class="key-btn" onclick="pressPin('2')">2</button>
+    <button class="key-btn" onclick="pressPin('3')">3</button>
+    <button class="key-btn" onclick="pressPin('4')">4</button>
+    <button class="key-btn" onclick="pressPin('5')">5</button>
+    <button class="key-btn" onclick="pressPin('6')">6</button>
+    <button class="key-btn" onclick="pressPin('7')">7</button>
+    <button class="key-btn" onclick="pressPin('8')">8</button>
+    <button class="key-btn" onclick="pressPin('9')">9</button>
+    <button class="key-btn fn" onclick="clearPin()">재입력</button>
+    <button class="key-btn" onclick="pressPin('0')">0</button>
+    <button class="key-btn fn" onclick="backspacePin()">
+      <svg style="width:24px;height:24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line></svg>
+    </button>
+  </div>
+</div>
 
 <!-- [탭 1] 홈 화면 -->
 <div id="screen-home" class="screen active">
@@ -46,7 +78,7 @@
     <div class="kb-card-footer">
       <div style="display:flex;align-items:center;gap:14px;">
         <span onclick="triggerActionWithDelay()" style="display:flex;align-items:center;gap:4px;cursor:pointer;">
-          <svg style="width:14px;height:14px;color:#6c757d;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <svg style="width:14px;height:14px;color:#6c757d;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0-.33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
           설정
         </span>
         <span style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="toggleBalanceMask()">잔액 <span style="display:inline-block;width:34px;height:18px;background:#dee2e6;border-radius:9px;position:relative;"><span style="position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.2);"></span></span></span>
@@ -55,18 +87,38 @@
     </div>
   </div>
 
-  <div class="kb-stock-box" onclick="triggerActionWithDelay()" style="cursor:pointer;">
+  <!-- [교체됨] 오늘의 증시 대신 들어간 실제 금융 위젯 2종 (실시간 연동 필요 없는 고정 정적 카드) -->
+  <!-- 1. KB 금융 캘린더 / 자동이체 스케줄 위젯 -->
+  <div class="kb-app-card" onclick="openDetailWithDelay()" style="cursor:pointer;margin-bottom:12px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-      <span style="font-size:15px;font-weight:800;color:var(--kb-dark);">오늘의 증시</span>
-      <span style="font-size:12px;color:#8a9299;">2026.11.05 15:33:28 ↻</span>
+      <span style="font-size:15px;font-weight:800;color:var(--kb-dark);">이달의 자동이체 스케줄</span>
+      <span style="font-size:12.5px;color:#8a9299;">스케줄 &gt;</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-bottom:14px;border-bottom:1px solid #f1f3f5;">
-      <div><div style="font-size:12.5px;color:#6c757d;font-weight:600;">코스피</div><div style="font-size:18px;font-weight:900;color:#e03131;margin-top:2px;">5,683.80</div><div style="font-size:11.5px;color:#e03131;">▲ 35.01 (0.62%)</div></div>
-      <div><div style="font-size:12.5px;color:#6c757d;font-weight:600;">코스닥</div><div style="font-size:18px;font-weight:900;color:#e03131;margin-top:2px;">714.95</div><div style="font-size:11.5px;color:#e03131;">▲ 10.56 (1.5%)</div></div>
+    <div style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:#f8f9fa;border-radius:14px;">
+      <div style="width:44px;height:44px;border-radius:12px;background:#fff8db;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #ffe066;">
+        <span style="font-size:10px;font-weight:800;color:#8d6b00;">11월</span>
+        <span style="font-size:16px;font-weight:900;color:#664d03;line-height:1;">25</span>
+      </div>
+      <div style="flex:1;">
+        <div style="font-size:14px;font-weight:800;color:var(--kb-dark);">KB미소드림적금 납입일</div>
+        <div style="font-size:12px;color:#6c757d;margin-top:2px;">월 300,000원 출금 예정 (D-20)</div>
+      </div>
     </div>
-    <div style="padding-top:12px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:700;color:#495057;">
-      <svg style="width:16px;height:16px;color:#e03131;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-      <span>KB증권 주식 투자하기 &gt;</span>
+  </div>
+
+  <!-- 2. 신용점수 및 금융 안전케어 위젯 (조회하기 토글) -->
+  <div class="kb-app-card" onclick="revealCreditScore()" style="cursor:pointer;">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:40px;height:40px;border-radius:12px;background:#eef6ff;display:flex;align-items:center;justify-content:center;color:#1865c9;">
+          <svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div>
+          <div style="font-size:14.5px;font-weight:800;color:var(--kb-dark);">내 신용점수 케어</div>
+          <div id="credit-score-sub" style="font-size:12px;color:#8c949c;margin-top:2px;">안전하게 내 신용평점을 확인하세요.</div>
+        </div>
+      </div>
+      <span id="credit-score-val" style="font-size:13.5px;color:var(--kb-blue);font-weight:800;">조회하기 &gt;</span>
     </div>
   </div>
 </div>
@@ -266,7 +318,7 @@
   </div>
 </div>
 
-<!-- [탭 5] 상품 화면 (실제 금융 앱 스크린샷 12와 100% 동일한 고급 벡터 그래픽 적용) -->
+<!-- [탭 5] 상품 화면 -->
 <div id="screen-product" class="screen">
   <div class="nav-header">
     <div style="display:flex;align-items:center;gap:8px;">
@@ -280,9 +332,7 @@
     <div style="font-size:20px;font-weight:900;color:var(--kb-dark);margin-top:2px;">테마가 있는 생활</div>
   </div>
 
-  <!-- 테마별 서비스 8구 그리드: 파스텔톤 컨테이너 + 실제 금융 앱 스타일 듀오톤 벡터 아이콘 -->
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px 8px;padding:20px 14px;background:#fff;margin:12px 16px;border-radius:22px;box-shadow:0 2px 8px rgba(0,0,0,.02);">
-    <!-- 1. 주식 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#e8f8f5 0%,#d1f2eb 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -295,7 +345,6 @@
       </div>
       <span style="font-size:13px;font-weight:700;color:#2c3e50;">주식</span>
     </div>
-    <!-- 2. 카드 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#ebf5fb 0%,#d4e6f1 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -307,7 +356,6 @@
       </div>
       <span style="font-size:13px;font-weight:700;color:#2c3e50;">카드</span>
     </div>
-    <!-- 3. 보험 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#fdf2e9 0%,#fae5d3 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -318,7 +366,6 @@
       </div>
       <span style="font-size:13px;font-weight:700;color:#2c3e50;">보험</span>
     </div>
-    <!-- 4. 대출 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#f5eef8 0%,#ebdef0 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -329,7 +376,6 @@
       </div>
       <span style="font-size:13px;font-weight:700;color:#2c3e50;">대출</span>
     </div>
-    <!-- 5. 부동산 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#fdedec 0%,#fadbd8 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -340,7 +386,6 @@
       </div>
       <span style="font-size:13px;font-weight:700;color:#2c3e50;">부동산</span>
     </div>
-    <!-- 6. 자동차 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#fef9e7 0%,#fdebd0 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -352,7 +397,6 @@
       </div>
       <span style="font-size:13px;font-weight:700;color:#2c3e50;">자동차</span>
     </div>
-    <!-- 7. 여행 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#e8f6f3 0%,#d0ece7 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -362,7 +406,6 @@
       </div>
       <span style="font-size:13px;font-weight:700;color:#2c3e50;">여행</span>
     </div>
-    <!-- 8. 통신 -->
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;" onclick="triggerActionWithDelay()">
       <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#eaf2f8 0%,#d4e6f1 100%);display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -376,7 +419,6 @@
     </div>
   </div>
 
-  <!-- 세상을 바꾸는 나눔 배너 (스크린샷 12와 100% 동일한 하트 편지봉투 그래픽) -->
   <div class="kb-app-card" style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:16px 20px;" onclick="triggerActionWithDelay()">
     <div style="display:flex;align-items:center;gap:12px;">
       <div style="width:38px;height:38px;border-radius:12px;background:#eef6ff;display:flex;align-items:center;justify-content:center;">
@@ -391,10 +433,8 @@
     <span style="color:#adb5bd;font-size:14px;font-weight:700;">&gt;</span>
   </div>
 
-  <!-- Monthly Pick 캐러셀 (스크린샷 12 복원: 스타프렌즈 마스코트 & 상품권 카드) -->
   <div style="margin:20px 20px 10px;font-size:17px;font-weight:800;color:var(--kb-dark);">Monthly Pick</div>
   <div style="display:flex;gap:12px;padding:0 16px 14px;overflow-x:auto;">
-    <!-- 카드 1: 매일 포인트 받기 (KB 아그리 캐릭터 테마) -->
     <div style="min-width:180px;background:#e8f8f5;border-radius:18px;padding:18px 16px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.02);">
       <div style="width:46px;height:46px;margin:0 auto 10px;background:#a3e4d7;border-radius:50%;display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -406,7 +446,6 @@
       <div style="font-size:14px;font-weight:800;color:#117864;">매일 포인트 받기</div>
       <div style="font-size:12px;color:#16a085;margin-top:4px;">클릭하고 포인트 챙기세요!</div>
     </div>
-    <!-- 카드 2: KB국민카드 신세계 상품권 -->
     <div style="min-width:180px;background:#fef9e7;border-radius:18px;padding:18px 16px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.02);">
       <div style="width:46px;height:46px;margin:0 auto 10px;background:#fdebd0;border-radius:50%;display:flex;align-items:center;justify-content:center;">
         <svg style="width:26px;height:26px;" viewBox="0 0 24 24" fill="none">
@@ -559,7 +598,7 @@
         <div style="font-size:19px;font-weight:900;color:#1a1d20;margin-top:6px;letter-spacing:-.3px;">808803-04-196944</div>
       </div>
       <button class="icon-btn" onclick="triggerActionWithDelay()" style="color:#6c7680;padding-top:2px;">
-        <svg style="width:21px;height:21px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <svg style="width:21px;height:21px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
       </button>
     </div>
 
@@ -617,6 +656,90 @@
 </div>
 
 <script>
+// KB국민인증서 간편비밀번호 741851 로직
+const CORRECT_PIN="741851";
+let enteredPin="";
+
+function updatePinDots(){
+  const dots=document.querySelectorAll('.pin-dot');
+  dots.forEach((dot,idx)=>{
+    if(idx<enteredPin.length)dot.classList.add('filled');
+    else dot.classList.remove('filled');
+  });
+}
+
+function pressPin(num){
+  if(enteredPin.length>=6)return;
+  enteredPin+=num;
+  updatePinDots();
+
+  if(enteredPin.length===6){
+    setTimeout(verifyPin,150);
+  }
+}
+
+function backspacePin(){
+  if(enteredPin.length>0){
+    enteredPin=enteredPin.slice(0,-1);
+    updatePinDots();
+    resetErrorMsg();
+  }
+}
+
+function clearPin(){
+  enteredPin="";
+  updatePinDots();
+  resetErrorMsg();
+}
+
+function resetErrorMsg(){
+  const msg=document.getElementById('lock-msg');
+  msg.innerText="6자리 비밀번호를 입력해주세요";
+  msg.classList.remove('error');
+}
+
+function verifyPin(){
+  const dotsContainer=document.getElementById('pin-dots');
+  const msg=document.getElementById('lock-msg');
+
+  if(enteredPin===CORRECT_PIN){
+    const s=document.getElementById('network-spinner');
+    s.classList.add('active');
+    setTimeout(()=>{
+      s.classList.remove('active');
+      document.getElementById('lock-screen').classList.add('hidden');
+    },500);
+  }else{
+    dotsContainer.classList.add('shake');
+    msg.innerText="비밀번호가 일치하지 않습니다 (오류 1/5)";
+    msg.classList.add('error');
+    setTimeout(()=>{
+      dotsContainer.classList.remove('shake');
+      clearPin();
+    },600);
+  }
+}
+
+// 신용점수 0.5초 로딩 후 토글 표시
+let isCreditRevealed=false;
+function revealCreditScore(){
+  const s=document.getElementById('network-spinner');
+  s.classList.add('active');
+  setTimeout(()=>{
+    s.classList.remove('active');
+    isCreditRevealed=!isCreditRevealed;
+    const vEl=document.getElementById('credit-score-val');
+    const sEl=document.getElementById('credit-score-sub');
+    if(isCreditRevealed){
+      vEl.innerText="KCB 942점 >";
+      sEl.innerText="상위 12% · 최근 변동 내역이 없어요.";
+    }else{
+      vEl.innerText="조회하기 >";
+      sEl.innerText="안전하게 내 신용평점을 확인하세요.";
+    }
+  },500);
+}
+
 const savingHistory=[
   {round:16,month:"2026.10월분",date:"2026.10.25",time:"14:28",amount:"300,000원",balance:"4,800,000원",branch:"등촌역",type:"자동이체"},
   {round:15,month:"2026.09월분",date:"2026.09.25",time:"16:05",amount:"300,000원",balance:"4,500,000원",branch:"등촌역",type:"자동이체"},
