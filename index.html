@@ -1,8 +1,6 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>KB스타뱅킹</title><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="KB스타뱅킹"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{--kb-yellow:#ffbc00;--kb-yellow-light:#fff9db;--kb-brown:#54483e;--kb-dark:#1a1d20;--kb-gray-bg:#f5f6f8;--kb-card-bg:#ffffff;--kb-sub-text:#8c949c;--kb-line:#ebeef1;--kb-blue:#1865c9;--kb-btn-bg:#eff2f5;--kb-sky-bg:#f0f4fa;--error:#f04452}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;user-select:none;-webkit-user-select:none}body{background:#000;display:flex;justify-content:center;min-height:100vh}.app-viewport{width:100%;max-width:430px;min-height:100vh;background:var(--kb-gray-bg);position:relative;display:flex;flex-direction:column;overflow-x:hidden;padding-top:env(safe-area-inset-top);box-shadow:0 0 25px rgba(0,0,0,.5)}.screen{display:none;flex-direction:column;flex:1;padding-bottom:calc(75px + env(safe-area-inset-bottom))}.screen.active{display:flex;animation:fadeIn .2s ease-in-out}@keyframes fadeIn{from{opacity:.92;transform:scale(.997)}to{opacity:1;transform:scale(1)}}/* KB 전용 보안 키패드 화면 */.lock-screen{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:100vh;background:#fff;z-index:99999;display:flex;flex-direction:column;justify-content:space-between;padding:calc(46px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));box-sizing:border-box}.lock-screen.hidden{display:none}.lock-header{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:16px}.kb-lock-badge{width:52px;height:52px;border-radius:50%;background:var(--kb-yellow);color:#fff;font-weight:900;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(255,188,0,.35)}.lock-title{font-size:20px;font-weight:900;color:var(--kb-dark);margin-top:16px;letter-spacing:-.3px}.lock-sub{font-size:13.5px;color:var(--kb-sub-text);margin-top:6px;min-height:18px}.lock-sub.error{color:var(--error);font-weight:700}.pin-dots{display:flex;gap:14px;margin-top:32px;justify-content:center}.pin-dot{width:14px;height:14px;border-radius:50%;background:#e5e8eb;transition:background-color .15s,transform .15s}.pin-dot.filled{background:var(--kb-yellow);transform:scale(1.15)}.pin-dots.shake{animation:shakeAnim .4s ease-in-out}@keyframes shakeAnim{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-10px)}40%,80%{transform:translateX(10px)}}.keypad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 10px;margin-bottom:10px}.key-btn{height:60px;border-radius:14px;border:none;background:transparent;font-size:24px;font-weight:700;color:#191f28;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .1s}.key-btn:active{background:#f8f9fa}.key-btn.fn{font-size:15px;color:#54483e;font-weight:700}.nav-header{padding:14px 20px 10px;display:flex;align-items:center;justify-content:space-between;background:var(--kb-card-bg);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(0,0,0,.03)}.nav-title{font-size:18px;font-weight:800;color:var(--kb-dark);display:flex;align-items:center;gap:6px}.header-icons{display:flex;gap:16px;align-items:center}.icon-btn{background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#3d4248;padding:2px}.icon-btn svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}.kb-top-user-row{padding:14px 20px 8px;display:flex;justify-content:space-between;align-items:center;background:#fff}.kb-user-grade{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:800;color:var(--kb-dark);cursor:pointer}.kb-badge-family{background:#4ea059;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:12px;display:inline-flex;align-items:center;gap:2px}.kb-badge-family::before{content:'F';font-weight:900;font-size:10px}.kb-notice-banner{margin:10px 16px 8px;background:#fff;border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.02);cursor:pointer}.kb-main-card{margin:8px 16px 12px;background:#fff;border-radius:22px;padding:22px 20px 18px;box-shadow:0 3px 12px rgba(0,0,0,.03)}.kb-acc-badge-icon{width:24px;height:24px;border-radius:50%;background:var(--kb-brown);color:var(--kb-yellow);font-weight:900;font-size:11px;display:flex;align-items:center;justify-content:center;margin-right:8px}.kb-acc-name-row{display:flex;align-items:center;font-size:14px;font-weight:700;color:#495057}.kb-acc-bal-row{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px}.kb-acc-bal{font-size:26px;font-weight:900;color:var(--kb-dark);letter-spacing:-.4px}.kb-btn-yellow{background:var(--kb-yellow);color:var(--kb-dark);border:none;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:800;cursor:pointer}.kb-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid #f1f3f5;font-size:13px;color:#6c757d}.sub-nav-tabs{display:flex;gap:20px;padding:12px 20px 0;background:#fff;border-bottom:1px solid var(--kb-line);overflow-x:auto;white-space:nowrap}.sub-nav-tabs::-webkit-scrollbar{display:none}.sub-tab-item{font-size:15px;font-weight:600;color:var(--kb-sub-text);padding-bottom:10px;position:relative;cursor:pointer}.sub-tab-item.active{color:var(--kb-dark);font-weight:800}.sub-tab-item.active::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--kb-dark);border-radius:2px}.kb-app-card{background:#fff;margin:0 16px 12px;border-radius:20px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.bottom-tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:calc(62px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border-top:1px solid rgba(0,0,0,.06);display:grid;grid-template-columns:repeat(5,1fr);align-items:center;padding-top:4px;z-index:100}.tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#949ca4;cursor:pointer}.tab-item.active{color:var(--kb-dark);font-weight:800}.tab-item.active svg{stroke:var(--kb-dark)}.tab-item svg{width:23px;height:23px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.network-spinner-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.15);backdrop-filter:blur(1.5px);-webkit-backdrop-filter:blur(1.5px);z-index:999999;display:none;align-items:center;justify-content:center}.network-spinner-modal.active{display:flex}.ios-spinner{width:32px;height:32px;border:3.5px solid rgba(255,188,0,.3);border-top-color:var(--kb-yellow);border-radius:50%;animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style></head><body><div class="app-viewport">
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>KB스타뱅킹</title><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="KB스타뱅킹"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{--kb-yellow:#ffbc00;--kb-yellow-light:#fff9db;--kb-brown:#54483e;--kb-dark:#1a1d20;--kb-gray-bg:#f5f6f8;--kb-card-bg:#ffffff;--kb-sub-text:#8c949c;--kb-line:#ebeef1;--kb-blue:#1865c9;--kb-btn-bg:#eff2f5;--kb-sky-bg:#f0f4fa;--error:#f04452}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;user-select:none;-webkit-user-select:none}body{background:#000;display:flex;justify-content:center;min-height:100vh}.app-viewport{width:100%;max-width:430px;min-height:100vh;background:var(--kb-gray-bg);position:relative;display:flex;flex-direction:column;overflow-x:hidden;padding-top:env(safe-area-inset-top);box-shadow:0 0 25px rgba(0,0,0,.5)}.screen{display:none;flex-direction:column;flex:1;padding-bottom:calc(75px + env(safe-area-inset-bottom))}.screen.active{display:flex;animation:fadeIn .2s ease-in-out}@keyframes fadeIn{from{opacity:.92;transform:scale(.997)}to{opacity:1;transform:scale(1)}}.lock-screen{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:100vh;background:#fff;z-index:99999;display:flex;flex-direction:column;justify-content:space-between;padding:calc(46px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));box-sizing:border-box}.lock-screen.hidden{display:none}.lock-header{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:16px}.kb-lock-badge{width:52px;height:52px;border-radius:50%;background:var(--kb-yellow);color:#fff;font-weight:900;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(255,188,0,.35)}.lock-title{font-size:20px;font-weight:900;color:var(--kb-dark);margin-top:16px;letter-spacing:-.3px}.lock-sub{font-size:13.5px;color:var(--kb-sub-text);margin-top:6px;min-height:18px}.lock-sub.error{color:var(--error);font-weight:700}.pin-dots{display:flex;gap:14px;margin-top:32px;justify-content:center}.pin-dot{width:14px;height:14px;border-radius:50%;background:#e5e8eb;transition:background-color .15s,transform .15s}.pin-dot.filled{background:var(--kb-yellow);transform:scale(1.15)}.pin-dots.shake{animation:shakeAnim .4s ease-in-out}@keyframes shakeAnim{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-10px)}40%,80%{transform:translateX(10px)}}.keypad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 10px;margin-bottom:10px}.key-btn{height:60px;border-radius:14px;border:none;background:transparent;font-size:24px;font-weight:700;color:#191f28;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color .1s}.key-btn:active{background:#f8f9fa}.key-btn.fn{font-size:15px;color:#54483e;font-weight:700}.nav-header{padding:14px 20px 10px;display:flex;align-items:center;justify-content:space-between;background:var(--kb-card-bg);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(0,0,0,.03)}.nav-title{font-size:18px;font-weight:800;color:var(--kb-dark);display:flex;align-items:center;gap:6px}.header-icons{display:flex;gap:16px;align-items:center}.icon-btn{background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#3d4248;padding:2px}.icon-btn svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}.kb-top-user-row{padding:14px 20px 8px;display:flex;justify-content:space-between;align-items:center;background:#fff}.kb-user-grade{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:800;color:var(--kb-dark);cursor:pointer}.kb-badge-family{background:#4ea059;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:12px;display:inline-flex;align-items:center;gap:2px}.kb-badge-family::before{content:'F';font-weight:900;font-size:10px}.kb-notice-banner{margin:10px 16px 8px;background:#fff;border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,.02);cursor:pointer}.kb-main-card{margin:8px 16px 12px;background:#fff;border-radius:22px;padding:22px 20px 18px;box-shadow:0 3px 12px rgba(0,0,0,.03)}.kb-acc-badge-icon{width:24px;height:24px;border-radius:50%;background:var(--kb-brown);color:var(--kb-yellow);font-weight:900;font-size:11px;display:flex;align-items:center;justify-content:center;margin-right:8px}.kb-acc-name-row{display:flex;align-items:center;font-size:14px;font-weight:700;color:#495057}.kb-acc-bal-row{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px}.kb-acc-bal{font-size:26px;font-weight:900;color:var(--kb-dark);letter-spacing:-.4px}.kb-btn-yellow{background:var(--kb-yellow);color:var(--kb-dark);border:none;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:800;cursor:pointer}.kb-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid #f1f3f5;font-size:13px;color:#6c757d}.sub-nav-tabs{display:flex;gap:20px;padding:12px 20px 0;background:#fff;border-bottom:1px solid var(--kb-line);overflow-x:auto;white-space:nowrap}.sub-nav-tabs::-webkit-scrollbar{display:none}.sub-tab-item{font-size:15px;font-weight:600;color:var(--kb-sub-text);padding-bottom:10px;position:relative;cursor:pointer}.sub-tab-item.active{color:var(--kb-dark);font-weight:800}.sub-tab-item.active::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--kb-dark);border-radius:2px}.kb-app-card{background:#fff;margin:0 16px 12px;border-radius:20px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.02)}.bottom-tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:calc(62px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);border-top:1px solid rgba(0,0,0,.06);display:grid;grid-template-columns:repeat(5,1fr);align-items:center;padding-top:4px;z-index:100}.tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#949ca4;cursor:pointer}.tab-item.active{color:var(--kb-dark);font-weight:800}.tab-item.active svg{stroke:var(--kb-dark)}.tab-item svg{width:23px;height:23px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.network-spinner-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.15);backdrop-filter:blur(1.5px);-webkit-backdrop-filter:blur(1.5px);z-index:999999;display:none;align-items:center;justify-content:center}.network-spinner-modal.active{display:flex}.ios-spinner{width:32px;height:32px;border:3.5px solid rgba(255,188,0,.3);border-top-color:var(--kb-yellow);border-radius:50%;animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}</style></head><body><div class="app-viewport">
 
-<!-- =========================================
-     [KB 전용 보안 키패드 잠금 화면 (PIN 741851)]
-     ========================================= -->
+<!-- [KB 보안 키패드 잠금 화면 (PIN 741851)] -->
 <div id="lock-screen" class="lock-screen">
   <div class="lock-header">
     <div class="kb-lock-badge">★</div>
@@ -87,26 +85,31 @@
     </div>
   </div>
 
-  <!-- [교체됨] 오늘의 증시 대신 들어간 실제 금융 위젯 2종 (실시간 연동 필요 없는 고정 정적 카드) -->
-  <!-- 1. KB 금융 캘린더 / 자동이체 스케줄 위젯 -->
-  <div class="kb-app-card" onclick="openDetailWithDelay()" style="cursor:pointer;margin-bottom:12px;">
+  <!-- [고도화 위젯 1] KB 마이머니 자산 안심 리포트 (실제 KB 스타뱅킹 메인 카드) -->
+  <div class="kb-app-card" onclick="switchTabWithDelay('screen-asset')" style="cursor:pointer;margin-bottom:12px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-      <span style="font-size:15px;font-weight:800;color:var(--kb-dark);">이달의 자동이체 스케줄</span>
-      <span style="font-size:12.5px;color:#8a9299;">스케줄 &gt;</span>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:15px;font-weight:800;color:var(--kb-dark);">나의 금융 케어 리포트</span>
+        <span style="font-size:10px;font-weight:800;color:#1865c9;background:#eef6ff;padding:2px 6px;border-radius:4px;">분석완료</span>
+      </div>
+      <span style="font-size:12.5px;color:#8a9299;">자세히 &gt;</span>
     </div>
-    <div style="display:flex;align-items:center;gap:14px;padding:12px 14px;background:#f8f9fa;border-radius:14px;">
-      <div style="width:44px;height:44px;border-radius:12px;background:#fff8db;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #ffe066;">
-        <span style="font-size:10px;font-weight:800;color:#8d6b00;">11월</span>
-        <span style="font-size:16px;font-weight:900;color:#664d03;line-height:1;">25</span>
+    <div style="padding:14px 16px;background:#f8f9fa;border-radius:14px;display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <div style="font-size:12px;color:#6c757d;font-weight:600;">안전하게 모으고 있는 자산</div>
+        <div style="font-size:18px;font-weight:900;color:var(--kb-dark);margin-top:2px;">4,800,000원</div>
       </div>
-      <div style="flex:1;">
-        <div style="font-size:14px;font-weight:800;color:var(--kb-dark);">KB미소드림적금 납입일</div>
-        <div style="font-size:12px;color:#6c757d;margin-top:2px;">월 300,000원 출금 예정 (D-20)</div>
+      <div style="width:38px;height:38px;border-radius:12px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;color:#2e7d32;">
+        <svg style="width:20px;height:20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
       </div>
+    </div>
+    <div style="font-size:12px;color:#8a9299;margin-top:10px;display:flex;align-items:center;gap:4px;">
+      <svg style="width:14px;height:14px;color:#1865c9;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      <span>금융사기 예방 서비스가 정상 작동 중입니다.</span>
     </div>
   </div>
 
-  <!-- 2. 신용점수 및 금융 안전케어 위젯 (조회하기 토글) -->
+  <!-- [고도화 위젯 2] 신용점수 및 금융 안전케어 위젯 (조회하기 토글) -->
   <div class="kb-app-card" onclick="revealCreditScore()" style="cursor:pointer;">
     <div style="display:flex;justify-content:space-between;align-items:center;">
       <div style="display:flex;align-items:center;gap:12px;">
@@ -575,7 +578,9 @@
   </div>
 </div>
 
-<!-- [적금 거래내역 화면] -->
+<!-- =========================================
+     [적금 거래내역 화면: '자동이체 납입', '등촌역' 완전 삭제 반영]
+     ========================================= -->
 <div id="screen-detail" class="screen" style="background:#fff;">
   <div class="nav-header" style="border-bottom:none;padding:14px 20px 8px;">
     <div style="display:flex;align-items:center;gap:6px;cursor:pointer;" onclick="switchTabWithDelay('screen-list')">
@@ -598,7 +603,7 @@
         <div style="font-size:19px;font-weight:900;color:#1a1d20;margin-top:6px;letter-spacing:-.3px;">808803-04-196944</div>
       </div>
       <button class="icon-btn" onclick="triggerActionWithDelay()" style="color:#6c7680;padding-top:2px;">
-        <svg style="width:21px;height:21px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <svg style="width:21px;height:21px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0-.33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
       </button>
     </div>
 
@@ -656,7 +661,6 @@
 </div>
 
 <script>
-// KB국민인증서 간편비밀번호 741851 로직
 const CORRECT_PIN="741851";
 let enteredPin="";
 
@@ -720,7 +724,6 @@ function verifyPin(){
   }
 }
 
-// 신용점수 0.5초 로딩 후 토글 표시
 let isCreditRevealed=false;
 function revealCreditScore(){
   const s=document.getElementById('network-spinner');
@@ -740,23 +743,25 @@ function revealCreditScore(){
   },500);
 }
 
+// 스크린샷 11과 일치: 하단 불필요한 '등촌역 | 자동이체' 문구 완전 삭제
 const savingHistory=[
-  {round:16,month:"2026.10월분",date:"2026.10.25",time:"14:28",amount:"300,000원",balance:"4,800,000원",branch:"등촌역",type:"자동이체"},
-  {round:15,month:"2026.09월분",date:"2026.09.25",time:"16:05",amount:"300,000원",balance:"4,500,000원",branch:"등촌역",type:"자동이체"},
-  {round:14,month:"2026.08월분",date:"2026.08.25",time:"13:14",amount:"300,000원",balance:"4,200,000원",branch:"등촌역",type:"자동이체"},
-  {round:13,month:"2026.07월분",date:"2026.07.25",time:"17:42",amount:"300,000원",balance:"3,900,000원",branch:"등촌역",type:"자동이체"},
-  {round:12,month:"2026.06월분",date:"2026.06.25",time:"15:30",amount:"300,000원",balance:"3,600,000원",branch:"등촌역",type:"자동이체"},
-  {round:11,month:"2026.05월분",date:"2026.05.25",time:"18:22",amount:"300,000원",balance:"3,300,000원",branch:"등촌역",type:"자동이체"},
-  {round:10,month:"2026.04월분",date:"2026.04.25",time:"13:50",amount:"300,000원",balance:"3,000,000원",branch:"등촌역",type:"자동이체"},
-  {round:9,month:"2026.03월분",date:"2026.03.25",time:"16:47",amount:"300,000원",balance:"2,700,000원",branch:"등촌역",type:"자동이체"},
-  {round:8,month:"2026.01월분",date:"2026.01.25",time:"14:15",amount:"300,000원",balance:"2,400,000원",branch:"등촌역",type:"자동이체"},
-  {round:7,month:"2025.12월분",date:"2025.12.25",time:"19:10",amount:"300,000원",balance:"2,100,000원",branch:"등촌역",type:"자동이체"},
-  {round:6,month:"2025.11월분",date:"2025.11.25",time:"15:08",amount:"300,000원",balance:"1,800,000원",branch:"등촌역",type:"자동이체"},
-  {round:5,month:"2025.10월분",date:"2025.10.25",time:"13:35",amount:"300,000원",balance:"1,500,000원",branch:"등촌역",type:"자동이체"},
-  {round:4,month:"2025.09월분",date:"2025.09.25",time:"17:19",amount:"300,000원",balance:"1,200,000원",branch:"등촌역",type:"자동이체"},
-  {round:3,month:"2025.08월분",date:"2025.08.25",time:"14:52",amount:"300,000원",balance:"900,000원",branch:"등촌역",type:"자동이체"},
-  {round:2,month:"2025.07월분",date:"2025.07.25",time:"16:11",amount:"300,000원",balance:"600,000원",branch:"등촌역",type:"자동이체"},
-  {round:1,month:"2025.06월분",date:"2025.06.25",time:"13:40",amount:"300,000원",balance:"300,000원",branch:"등촌역",type:"신규"}
+  {round:16,month:"2026.10월분",date:"2026.10.25",time:"14:28",amount:"300,000원",balance:"4,800,000원"},
+  {round:15,month:"2026.09월분",date:"2026.09.25",time:"16:05",amount:"300,000원",balance:"4,500,000원"},
+  {round:14,month:"2026.08월분",date:"2026.08.25",time:"13:14",amount:"300,000원",balance:"4,200,000원"},
+  {round:13,month:"2026.07월분",date:"2026.07.25",time:"17:42",amount:"300,000원",balance:"3,900,000원"},
+  {round:12,month:"2026.06월분",date:"2026.06.25",time:"15:30",amount:"300,000원",balance:"3,600,000원"},
+  {round:11,month:"2026.05월분",date:"2026.05.25",time:"18:22",amount:"300,000원",balance:"3,300,000원"},
+  {round:10,month:"2026.04월분",date:"2026.04.25",time:"13:50",amount:"300,000원",balance:"3,000,000원"},
+  {round:9,month:"2026.03월분",date:"2026.03.25",time:"16:47",amount:"300,000원",balance:"2,700,000원"},
+  // 2026.02 누락
+  {round:8,month:"2026.01월분",date:"2026.01.25",time:"14:15",amount:"300,000원",balance:"2,400,000원"},
+  {round:7,month:"2025.12월분",date:"2025.12.25",time:"19:10",amount:"300,000원",balance:"2,100,000원"},
+  {round:6,month:"2025.11월분",date:"2025.11.25",time:"15:08",amount:"300,000원",balance:"1,800,000원"},
+  {round:5,month:"2025.10월분",date:"2025.10.25",time:"13:35",amount:"300,000원",balance:"1,500,000원"},
+  {round:4,month:"2025.09월분",date:"2025.09.25",time:"17:19",amount:"300,000원",balance:"1,200,000원"},
+  {round:3,month:"2025.08월분",date:"2025.08.25",time:"14:52",amount:"300,000원",balance:"900,000원"},
+  {round:2,month:"2025.07월분",date:"2025.07.25",time:"16:11",amount:"300,000원",balance:"600,000원"},
+  {round:1,month:"2025.06월분",date:"2025.06.25",time:"13:40",amount:"300,000원",balance:"300,000원"}
 ];
 
 let isMasked=false;
@@ -794,6 +799,7 @@ function triggerActionWithDelay(){
   setTimeout(()=>{s.classList.remove('active');},500);
 }
 
+// 스크린샷 11 규격: 등촌역/자동이체 삭제 및 정밀 키-값 행 렌더링
 function openDetailWithDelay(){
   const s=document.getElementById('network-spinner');
   s.classList.add('active');
@@ -804,7 +810,7 @@ function openDetailWithDelay(){
 
     savingHistory.forEach(item=>{
       const card=document.createElement('div');
-      card.style.cssText="padding:20px 0 16px;border-bottom:1px solid #ebeef1;";
+      card.style.cssText="padding:18px 0 16px;border-bottom:1px solid #ebeef1;";
       card.innerHTML=`
         <div style="font-size:16px;margin-bottom:14px;letter-spacing:-.2px;">
           <b style="color:#1a1d20;font-weight:800;">${item.round}회차</b>
@@ -821,9 +827,6 @@ function openDetailWithDelay(){
         <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px;">
           <span style="color:#6c7680;font-weight:500;">납입 후 잔액</span>
           <span style="color:#1a1d20;font-weight:700;">${item.balance}</span>
-        </div>
-        <div style="text-align:right;font-size:12px;color:#8c949c;font-weight:500;margin-top:10px;">
-          ${item.branch}  |  ${item.type}
         </div>
       `;
       c.appendChild(card);
